@@ -151,6 +151,12 @@ public class InteractionHookImpl extends AbstractWebhookClient<Message> implemen
     }
 
     @Nonnull
+    public boolean isEphemeral() 
+    {
+        return this.ephemeral;
+    }
+
+    @Nonnull
     @Override
     public WebhookMessageCreateActionImpl<Message> sendRequest()
     {

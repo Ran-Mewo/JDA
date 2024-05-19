@@ -118,6 +118,14 @@ public interface InteractionHook extends WebhookClient<Message>
     InteractionHook setEphemeral(boolean ephemeral);
 
     /**
+     * Whether the messages sent from this interaction hook is ephemeral.
+     * 
+     * @return Boolean determining if it is ephemeral.
+     */
+    @Nonnull
+    boolean isEphemeral();
+
+    /**
      * The JDA instance for this interaction
      *
      * @return The JDA instance
